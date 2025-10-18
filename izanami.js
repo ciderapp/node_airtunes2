@@ -9,6 +9,7 @@ const { Stream } = require("stream");
 var audioStream = new Stream.PassThrough();
 const getPort = require("get-port-cjs");
 const Chromecast = require("./examples/ccast/lib.js");
+const ip = require("ip");
 
 async function main() {
   // console.log(await getPort());
